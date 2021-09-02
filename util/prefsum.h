@@ -85,7 +85,8 @@ public:
     {
         if ((_sum.size() <= index) && (index < 0))
         {
-            throw std::out_of_range("size of sum < index in prefix_sum.remove");
+            //! TODO.. er fix this right
+            return;
         }
         if (_sum.size() - 1 == index)
         {

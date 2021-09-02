@@ -12,11 +12,11 @@ concept StreamObjType = requires(T a, PackStream &stream)
 {
     {
         a.write(stream)
-        } -> PackStream &;
+    };
 
     {
         a.read(stream)
-        } -> PackStream &;
+    };
 };
 
 template <typename T>

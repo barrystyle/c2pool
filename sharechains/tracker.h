@@ -81,7 +81,7 @@ namespace c2pool::shares
         {
             //t0
             shared_ptr<BaseShare> previous_share;
-            if (share_data.previous_share_hash)
+            if (share_data.previous_share_hash != uint256())
             {
                 previous_share = nullptr;
             }
